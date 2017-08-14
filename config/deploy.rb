@@ -1,8 +1,8 @@
 # config valid only for current version of Capistrano
 lock "3.9.0"
 
-set :application, "my_app_name"
-set :repo_url, "git@example.com:me/my_repo.git"
+set :application, "hustle"
+set :repo_url, "git@github.com:danchapman/hustle.git"
 
 # Default branch is :master
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
@@ -34,3 +34,9 @@ set :repo_url, "git@example.com:me/my_repo.git"
 
 # Default value for keep_releases is 5
 # set :keep_releases, 5
+
+set :rails_env, "production"
+
+set :deploy_via, :copy
+
+server "chappy.world", user: "chappy"
