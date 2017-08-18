@@ -39,4 +39,4 @@ set :rails_env, "production"
 
 set :deploy_via, :copy
 
-server "chappy.world", user: "chappy"
+server "chappy.world", user: "chappy", roles: %w{app db web}

@@ -1,7 +1,7 @@
 development:
   adapter: postgresql
   encoding: utf8
-  database: hustle_dev
+  database: hustle
   pool: 5
   username: 
   password:
@@ -17,7 +17,7 @@ test: &TEST
 production:
   adapter: postgresql
   encoding: utf8
-  database: hustle_prod
+  database: hustle
   pool: 5
   username: 
   password:

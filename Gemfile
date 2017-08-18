@@ -38,7 +38,12 @@ group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   # Adds support for Capybara system testing and selenium driver
   gem 'capybara', '~> 2.13'
-  gem 'capistrano-rails', '~> 1.1'
+  gem 'capistrano', '~> 3.6'
+  gem 'capistrano-rbenv'
+  gem 'capistrano-bundler', '~> 1.2'
+  gem 'capistrano-rails', '~> 1.3'
+  gem 'capistrano-secrets-yml', '~> 1.0.0'
+  gem 'capistrano3-puma'
   gem 'selenium-webdriver'
 end
 
