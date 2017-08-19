@@ -43,7 +43,7 @@ group :development, :test do
   gem 'capistrano-bundler', '~> 1.2'
   gem 'capistrano-rails', '~> 1.3'
   gem 'capistrano-secrets-yml', '~> 1.0.0'
-  gem 'capistrano3-puma'
+  gem 'capistrano3-puma', github: "seuros/capistrano-puma"
   gem 'selenium-webdriver'
 end
 
