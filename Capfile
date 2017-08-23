@@ -21,6 +21,7 @@ require "capistrano/rbenv"
 require "capistrano/bundler"
 require "capistrano/rails/assets" # adds assets compiler
 require 'capistrano/secrets_yml' # adds production secret key
+require 'capistrano/postgresql'
 # require "capistrano/rails/migrations"
 
 require 'capistrano/puma'
