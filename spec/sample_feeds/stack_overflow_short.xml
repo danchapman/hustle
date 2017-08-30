@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:a10="http://www.w3.org/2005/Atom">
+  <channel xmlns:os="http://a10.com/-/spec/opensearch/1.1/">
+    <title>contract mid-level remote Software Engineering jobs - Stack Overflow</title>
+    <link>https://stackoverflow.com/jobs</link>
+    <description>contract mid-level remote Software Engineering jobs - Stack Overflow</description>
+    <image>
+      <url>http://cdn.sstatic.net/Sites/stackoverflow/img/favicon.ico?v=4f32ecc8f43d</url>
+      <title>contract mid-level remote Software Engineering jobs - Stack Overflow</title>
+      <link>https://stackoverflow.com/jobs</link>
+    </image>
+    <os:totalResults>11</os:totalResults>
+    <item>
+      <guid isPermaLink="false">152285</guid>
+      <link>https://stackoverflow.com/jobs/152285/ruby-developer-ecommerce-n-or-s-america-purepoint?a=P4rtZQSHAty</link>
+      <a10:author>
+        <a10:name>Purepoint</a10:name>
+      </a10:author>
+      <category>ruby-on-rails</category>
+      <category>ruby</category>
+      <category>postgresql</category>
+      <title>Ruby Developer Ecommerce N. or S. America at Purepoint () (allows remote)</title>
+      <description>This is a fake description</description>
+      <pubDate>Tue, 22 Aug 2017 16:10:13 Z</pubDate>
+      <a10:updated>2017-08-22T16:10:13Z</a10:updated>
+    </item>
+    <item>
+      <guid isPermaLink="false">141116</guid>
+      <link>https://stackoverflow.com/jobs/141116/expert-technical-interviewer-freelance-karat?a=LkcSbeLCa0o</link>
+      <a10:author>
+        <a10:name>Karat</a10:name>
+      </a10:author>
+      <category>technical-interviewing</category>
+      <category>data-structures</category>
+      <category>algorithm</category>
+      <category>java</category>
+      <category>python</category>
+      <title>Expert Technical Interviewer (Freelance) at Karat () (allows remote)</title>
+      <description>&lt;p&gt;&lt;strong&gt;Join our elite community of Expert Technical Interviewers.&lt;/strong&gt;&lt;/p&gt;&lt;br /&gt;&lt;p&gt;Karat&amp;rsquo;s Expert Interviewers are recognized and rewarded for doing a first-class job as top assessors of technical talent. Every interviewer in the network is an accomplished engineer. &amp;nbsp;Our interviewers include development managers from big-tech companies, start-up engineers and freelancers covering the full technology stack.&lt;/p&gt;&lt;br /&gt;&lt;p&gt;&lt;strong&gt;Flexible, high impact work that is compensated at highly competitive rates.&lt;/strong&gt;&lt;/p&gt;&lt;br /&gt;&lt;p&gt;As an Expert Interviewer, you will be compensated at highly competitive rates for your interviewing expertise. &amp;nbsp;The time commitment is flexible---many of our interviews happen on nights and weekends. Some experts do 5 interviews/week while others do over 25 interviews/week. &amp;nbsp;You can work from anywhere, anytime. &amp;nbsp;You will sharpen your interviewing skills and transform the interviewing experience for every candidate and company.&lt;/p&gt;</description>
+      <pubDate>Wed, 23 Aug 2017 15:30:49 Z</pubDate>
+      <a10:updated>2017-08-23T15:30:49Z</a10:updated>
+    </item>
+  </channel>
+</rss>

@@ -17,32 +17,74 @@ RSpec.describe FeedProcessor, type: :model do
       end
 
       context "with only new tags" do
-        it "saves all tags"
-        it "associates all job tags"
+        before(:each) do
+          subject = FeedProcessor.new(mock_feed("stack_overflow_short"))
+          subject.process
+        end
+
+        it "saves all tags" do
+          expect(Tag.count).to eq(8)
+          expect(Tag.first.name).to eq("ruby-on-rails")
+        end
+
+        it "associates all job tags" do
+          saved_job_first = Job.first
+          saved_job_last = Job.last
+          expect(saved_job_first.tags.map(&:name)).to eq(['ruby-on-rails','ruby','postgresql'])
+          expect(saved_job_last.tags.map(&:name)).to eq(["technical-interviewing", "data-structures", "algorithm", "java", "python"])
+        end
       end
 
       context "with duplicate new tags" do
-        it "saves new uniq tags"
-        it "associates all job tags"
-      end
+        before(:each) do
+          subject = FeedProcessor.new(mock_feed)
+          subject.process
+        end
 
-      context "with some new tags" do
-        it "saves new tags"
-        it "associates all job tags"
-      end
+        it "saves only new uniq tags" do
+          expect(Tag.count).to eq(37)
+        end
 
-      context "with no new tags" do
-        it "saves no new tags"
-        it "associates all job tags"
+        it "associates all job tags" do
+          expect(JobTag.count).to eq(50)
+        end
       end
     end
 
     context "with some new jobs" do
-      it "saves new jobs only"
+      it "saves new jobs only" do
+        FeedProcessor.new(mock_feed("stack_overflow_short")).process
+        expect(Job.count).to eq(2)
+
+        FeedProcessor.new(mock_feed).process
+        expect(Job.count).to eq(11)
+      end
+
+      it "saves new tags only" do
+        FeedProcessor.new(mock_feed("stack_overflow_short")).process
+        expect(Tag.count).to eq(8)
+
+        FeedProcessor.new(mock_feed).process
+        expect(Tag.count).to eq(37)
+      end
     end
 
     context "with no new jobs" do
-      it "saves no jobs"
+      it "saves no jobs" do
+        FeedProcessor.new(mock_feed("stack_overflow_short")).process
+        expect(Job.count).to eq(2)
+
+        FeedProcessor.new(mock_feed("stack_overflow_short")).process
+        expect(Job.count).to eq(2)
+      end
+
+      it "saves no tags" do
+        FeedProcessor.new(mock_feed("stack_overflow_short")).process
+        expect(Tag.count).to eq(8)
+
+        FeedProcessor.new(mock_feed("stack_overflow_short")).process
+        expect(Tag.count).to eq(8)
+      end
     end 
   end
 end

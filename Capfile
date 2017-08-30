@@ -22,7 +22,7 @@ require "capistrano/bundler"
 require "capistrano/rails/assets" # adds assets compiler
 require 'capistrano/secrets_yml' # adds production secret key
 require 'capistrano/postgresql'
-# require "capistrano/rails/migrations"
+require "capistrano/rails/migrations"
 
 require 'capistrano/puma'
 install_plugin Capistrano::Puma  # Default puma tasks
